@@ -1,6 +1,5 @@
 FROM arm32v6/alpine
 
-
 WORKDIR /tmp
 
 RUN apk --no-cache add --virtual runtime-dependencies \
