@@ -23,6 +23,8 @@ RUN apk --no-cache add --virtual runtime-dependencies \
       rm -rf /var/cache/apk/* && \
       rm -rf /tmp/*
 
+COPY ftdi.cfg /usr/local/share/openocd/scripts/interface/ftdi/ft2232hl_jtag_ch1.cfg
+
 VOLUME /dev/bus/usb:/dev/bus/usb
 
 EXPOSE 3333 4444 6666
